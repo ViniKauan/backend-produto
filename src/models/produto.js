@@ -2,7 +2,7 @@
 const Sequelize = require('sequelize');
 
 // Obtem dados de conexão entre sequelize e banco de dados MySQL
-const sequelize = require('../database/database.js');
+const sequelize = require('../Database/database.js');
 
 // Cria tabela no BD e seus campos
 const Produto = sequelize.define("produto", {
@@ -50,6 +50,7 @@ const Produto = sequelize.define("produto", {
         allowNull: false,
         type: Sequelize.BOOLEAN(),
         defaultValue: true
+
     }
 });
 
